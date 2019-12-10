@@ -1,1 +1,2 @@
-# Documentation in ./doc folder
+# Documentation
+Can be found in ./doc folder
