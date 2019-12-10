@@ -1,0 +1,680 @@
+
+*** Running vivado
+    with args -log DLX.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DLX.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source DLX.tcl -notrace
+Command: synth_design -top DLX -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1448 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 336.246 ; gain = 100.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DLX' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:41]
+	Parameter nbit_addr bound to: 32 - type: integer 
+	Parameter nbit_cells bound to: 32 - type: integer 
+	Parameter nbit_reg_addr bound to: 5 - type: integer 
+	Parameter nbit_reg bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/control_unit.vhd:6' bound to instance 'control_unit_instance' of component 'control_unit' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/control_unit.vhd:37]
+WARNING: [Synth 8-6014] Unused sequential element op_reg was removed.  [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/control_unit.vhd:554]
+WARNING: [Synth 8-6014] Unused sequential element IR_opcode_shift_reg was removed.  [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/control_unit.vhd:689]
+WARNING: [Synth 8-6014] Unused sequential element IR_func_shift_reg was removed.  [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/control_unit.vhd:690]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (1#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/control_unit.vhd:37]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'PC_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'D_Flip_Flop' (2#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'POST_PC_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:155]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'IR_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:172]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'NPC_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:175]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'PC_mux' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:16]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexer' (3#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:16]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'RF_mux' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'multiplexer__parameterized1' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:16]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexer__parameterized1' (3#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:16]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'NPC1_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:260]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'A_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:263]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'B_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:266]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'SEREG_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:269]
+	Parameter Nbit bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'IR1_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'D_Flip_Flop__parameterized2' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'D_Flip_Flop__parameterized2' (3#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'JAL_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'D_Flip_Flop__parameterized4' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 33 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'D_Flip_Flop__parameterized4' (3#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'mux_A' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:279]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'mux_B' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:282]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:6' bound to instance 'ALU_unit' of component 'ALU' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:19]
+	Parameter Nbit bound to: 5 - type: integer 
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'mux' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:120]
+	Parameter num_A bound to: 32 - type: integer 
+	Parameter num_B bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'BOOTHMUL' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:6' bound to instance 'multiplier' of component 'BOOTHMUL' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'BOOTHMUL' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:14]
+	Parameter num_A bound to: 32 - type: integer 
+	Parameter num_B bound to: 32 - type: integer 
+	Parameter n_B bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'booth_encoder' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:5' bound to instance 'booth_enc' of component 'booth_encoder' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'booth_encoder' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:11]
+	Parameter n_B bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'enc0' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ENCODER' (4#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:10]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-3491] module 'ENCODER' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/encoder.vhd:5' bound to instance 'encx' of component 'ENCODER' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'booth_encoder' (5#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/booth_encoder.vhd:11]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:17]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX51' (6#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:17]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'MUX51' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/mux5_1.vhd:6' bound to instance 'mux' of component 'MUX51' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:78]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'first_rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:14]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RCA_MULT' (7#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:14]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_MULT' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/rca_mult.vhd:5' bound to instance 'rca' of component 'RCA_MULT' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'BOOTHMUL' (8#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/multiplier/multiplier.vhd:14]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'logic_unit' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/logic_unit.vhd:4' bound to instance 'logicunit' of component 'logic_unit' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'logic_unit' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/logic_unit.vhd:16]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logic_unit' (9#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/logic_unit.vhd:16]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/comparator.vhd:5' bound to instance 'comparatorunit' of component 'comparator' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/comparator.vhd:17]
+	Parameter Nbit bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'comparator' (10#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/comparator.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/alu/ALU.vhd:19]
+	Parameter Nbit bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'BC_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'D_Flip_Flop__parameterized6' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'D_Flip_Flop__parameterized6' (11#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:16]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'ALUOut_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:312]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'B1_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:315]
+	Parameter Nbit bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'IR2_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:318]
+	Parameter Nbit bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'JAL1_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:321]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'MD_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:340]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'ALUOut1_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:343]
+	Parameter Nbit bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'IR3_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:346]
+	Parameter Nbit bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'D_Flip_Flop' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/D_Flip_Flop.vhd:4' bound to instance 'JAL2_register' of component 'D_Flip_Flop' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:349]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'WB_mux' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:353]
+	Parameter Nbit bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer' declared at 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/multiplexer.vhd:4' bound to instance 'JAL_mux' of component 'multiplexer' [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:356]
+INFO: [Synth 8-256] done synthesizing module 'DLX' (12#1) [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sources_1/DLX.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 397.227 ; gain = 161.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 397.227 ; gain = 161.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 397.227 ; gain = 161.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/constrs_1/Cmod-A7-Master.xdc]
+Finished Parsing XDC File [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/constrs_1/Cmod-A7-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 737.578 ; gain = 1.477
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "uPC1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uPC4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "microcode[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "microcode[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "microcode[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "microcode[0]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     65 Bit       Adders := 15    
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 5     
++---Registers : 
+	               33 Bit    Registers := 3     
+	               32 Bit    Registers := 12    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 78    
+	   2 Input     31 Bit        Muxes := 31    
+	 480 Input     22 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 5     
+	   7 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   8 Input      3 Bit        Muxes := 16    
+	  21 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	  21 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DLX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     10 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 5     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	 480 Input     22 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 5     
+	   7 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module D_Flip_Flop 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module multiplexer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module multiplexer__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module D_Flip_Flop__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module D_Flip_Flop__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+Module ENCODER 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+Module RCA_MULT 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     65 Bit       Adders := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 65    
+	   2 Input     31 Bit        Muxes := 31    
+	  21 Input      3 Bit        Muxes := 2     
+	  21 Input      1 Bit        Muxes := 1     
+Module D_Flip_Flop__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'IR1_register/q_reg[3]' (FDE) to 'SEREG_register/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'IR1_register/q_reg[4]' (FDE) to 'SEREG_register/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'IR1_register/q_reg[2]' (FDE) to 'SEREG_register/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'IR1_register/q_reg[1]' (FDE) to 'SEREG_register/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'IR1_register/q_reg[0]' (FDE) to 'SEREG_register/q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'SEREG_register/q_reg[25]' (FDE) to 'SEREG_register/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'SEREG_register/q_reg[26]' (FDE) to 'SEREG_register/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'SEREG_register/q_reg[27]' (FDE) to 'SEREG_register/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'SEREG_register/q_reg[28]' (FDE) to 'SEREG_register/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'SEREG_register/q_reg[29]' (FDE) to 'SEREG_register/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'SEREG_register/q_reg[30]' (FDE) to 'SEREG_register/q_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (control_unit_instance/func_reg[10]) is unused and will be removed from module DLX.
+WARNING: [Synth 8-3332] Sequential element (control_unit_instance/func_reg[9]) is unused and will be removed from module DLX.
+WARNING: [Synth 8-3332] Sequential element (control_unit_instance/func_reg[8]) is unused and will be removed from module DLX.
+WARNING: [Synth 8-3332] Sequential element (control_unit_instance/func_reg[7]) is unused and will be removed from module DLX.
+WARNING: [Synth 8-3332] Sequential element (IR_register/q_reg[30]) is unused and will be removed from module DLX.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ALU         | Cis        | 32x1          | LUT            | 
+|ALU         | Cis        | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 737.578 ; gain = 502.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|DLX         | JAL2_register/q_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   225|
+|3     |LUT1   |    36|
+|4     |LUT2   |  1025|
+|5     |LUT3   |   323|
+|6     |LUT4   |   311|
+|7     |LUT5   |  1319|
+|8     |LUT6   |   460|
+|9     |MUXF7  |    26|
+|10    |SRL16E |     1|
+|11    |FDCE   |    43|
+|12    |FDPE   |    20|
+|13    |FDRE   |   503|
+|14    |FDSE   |    15|
+|15    |IBUF   |   130|
+|16    |OBUF   |   181|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+------------------------------+------+
+|      |Instance                |Module                        |Cells |
++------+------------------------+------------------------------+------+
+|1     |top                     |                              |  4619|
+|2     |  ALU_unit              |ALU                           |   642|
+|3     |    multiplier          |BOOTHMUL                      |   642|
+|4     |      first_rca         |RCA_MULT                      |    39|
+|5     |      \mux_gen[0].mux   |MUX51                         |    31|
+|6     |      \mux_gen[10].mux  |MUX51_15                      |    23|
+|7     |      \mux_gen[11].mux  |MUX51_16                      |    19|
+|8     |      \mux_gen[12].mux  |MUX51_17                      |    15|
+|9     |      \mux_gen[13].mux  |MUX51_18                      |    11|
+|10    |      \mux_gen[14].mux  |MUX51_19                      |     4|
+|11    |      \mux_gen[15].mux  |MUX51_20                      |     2|
+|12    |      \mux_gen[1].mux   |MUX51_21                      |    30|
+|13    |      \mux_gen[2].mux   |MUX51_22                      |    55|
+|14    |      \mux_gen[3].mux   |MUX51_23                      |    51|
+|15    |      \mux_gen[4].mux   |MUX51_24                      |    47|
+|16    |      \mux_gen[5].mux   |MUX51_25                      |    43|
+|17    |      \mux_gen[6].mux   |MUX51_26                      |    39|
+|18    |      \mux_gen[7].mux   |MUX51_27                      |    35|
+|19    |      \mux_gen[8].mux   |MUX51_28                      |    31|
+|20    |      \mux_gen[9].mux   |MUX51_29                      |    27|
+|21    |      \rca_gen[10].rca  |RCA_MULT_30                   |     5|
+|22    |      \rca_gen[11].rca  |RCA_MULT_31                   |     6|
+|23    |      \rca_gen[12].rca  |RCA_MULT_32                   |    11|
+|24    |      \rca_gen[13].rca  |RCA_MULT_33                   |     9|
+|25    |      \rca_gen[14].rca  |RCA_MULT_34                   |     6|
+|26    |      \rca_gen[15].rca  |RCA_MULT_35                   |     4|
+|27    |      \rca_gen[2].rca   |RCA_MULT_36                   |     9|
+|28    |      \rca_gen[3].rca   |RCA_MULT_37                   |     9|
+|29    |      \rca_gen[4].rca   |RCA_MULT_38                   |     8|
+|30    |      \rca_gen[5].rca   |RCA_MULT_39                   |     8|
+|31    |      \rca_gen[6].rca   |RCA_MULT_40                   |     7|
+|32    |      \rca_gen[7].rca   |RCA_MULT_41                   |     7|
+|33    |      \rca_gen[8].rca   |RCA_MULT_42                   |     6|
+|34    |      \rca_gen[9].rca   |RCA_MULT_43                   |     6|
+|35    |  ALUOut1_register      |D_Flip_Flop                   |    32|
+|36    |  ALUOut_register       |D_Flip_Flop_0                 |    72|
+|37    |  A_register            |D_Flip_Flop_1                 |   229|
+|38    |  B1_register           |D_Flip_Flop_2                 |    32|
+|39    |  BC_register           |D_Flip_Flop__parameterized6   |     1|
+|40    |  B_register            |D_Flip_Flop_3                 |    33|
+|41    |  IR1_register          |D_Flip_Flop__parameterized2   |     6|
+|42    |  IR2_register          |D_Flip_Flop__parameterized2_4 |    10|
+|43    |  IR3_register          |D_Flip_Flop__parameterized2_5 |    17|
+|44    |  IR_register           |D_Flip_Flop_6                 |    47|
+|45    |  JAL1_register         |D_Flip_Flop__parameterized4   |    33|
+|46    |  JAL2_register         |D_Flip_Flop__parameterized4_7 |    65|
+|47    |  JAL_register          |D_Flip_Flop__parameterized4_8 |    32|
+|48    |  MD_register           |D_Flip_Flop_9                 |    32|
+|49    |  NPC1_register         |D_Flip_Flop_10                |    32|
+|50    |  NPC_register          |D_Flip_Flop_11                |    41|
+|51    |  PC_register           |D_Flip_Flop_12                |    33|
+|52    |  POST_PC_register      |D_Flip_Flop_13                |   103|
+|53    |  SEREG_register        |D_Flip_Flop_14                |  1894|
+|54    |  control_unit_instance |control_unit                  |   921|
++------+------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 792.484 ; gain = 557.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 792.484 ; gain = 216.820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 792.484 ; gain = 557.172
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 381 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+146 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 792.484 ; gain = 570.172
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.runs/synth_1/DLX.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DLX_utilization_synth.rpt -pb DLX_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 792.484 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 31 15:50:56 2018...

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DLXtb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DLXtb" />
+            <top_module name="constants" />
+            <top_module name="rf_and_mem_constants" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="34500001fs"></ZoomEndTime>
+      <Cursor1Time time="27500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="group136" type="group">
+      <obj_property name="label">CONTROL UNIT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider135">
+         <obj_property name="label">CONTROL_UNIT</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/Clk" type="logic">
+         <obj_property name="ElementShortName">Clk</obj_property>
+         <obj_property name="ObjectShortName">Clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/Rst" type="logic">
+         <obj_property name="ElementShortName">Rst</obj_property>
+         <obj_property name="ObjectShortName">Rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/instruction_bus" type="array">
+         <obj_property name="ElementShortName">instruction_bus[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction_bus[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/PC_drive" type="logic">
+         <obj_property name="ElementShortName">PC_drive</obj_property>
+         <obj_property name="ObjectShortName">PC_drive</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/uPC1" type="other">
+         <obj_property name="ElementShortName">uPC1</obj_property>
+         <obj_property name="ObjectShortName">uPC1</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/uPC2" type="other">
+         <obj_property name="ElementShortName">uPC2</obj_property>
+         <obj_property name="ObjectShortName">uPC2</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/uPC3" type="other">
+         <obj_property name="ElementShortName">uPC3</obj_property>
+         <obj_property name="ObjectShortName">uPC3</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/uPC4" type="other">
+         <obj_property name="ElementShortName">uPC4</obj_property>
+         <obj_property name="ObjectShortName">uPC4</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group321" type="group">
+         <obj_property name="label">counters</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/ICount1" type="other">
+            <obj_property name="ElementShortName">ICount1</obj_property>
+            <obj_property name="ObjectShortName">ICount1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/ICount2" type="other">
+            <obj_property name="ElementShortName">ICount2</obj_property>
+            <obj_property name="ObjectShortName">ICount2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/ICount3" type="other">
+            <obj_property name="ElementShortName">ICount3</obj_property>
+            <obj_property name="ObjectShortName">ICount3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/ICount4" type="other">
+            <obj_property name="ElementShortName">ICount4</obj_property>
+            <obj_property name="ObjectShortName">ICount4</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group347" type="group">
+         <obj_property name="label">CU control signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/EN1" type="logic">
+            <obj_property name="ElementShortName">EN1</obj_property>
+            <obj_property name="ObjectShortName">EN1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/RF1" type="logic">
+            <obj_property name="ElementShortName">RF1</obj_property>
+            <obj_property name="ObjectShortName">RF1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/RF2" type="logic">
+            <obj_property name="ElementShortName">RF2</obj_property>
+            <obj_property name="ObjectShortName">RF2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/SESel" type="logic">
+            <obj_property name="ElementShortName">SESel</obj_property>
+            <obj_property name="ObjectShortName">SESel</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/S1" type="logic">
+            <obj_property name="ElementShortName">S1</obj_property>
+            <obj_property name="ObjectShortName">S1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/S2" type="logic">
+            <obj_property name="ElementShortName">S2</obj_property>
+            <obj_property name="ObjectShortName">S2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/ALU" type="array">
+            <obj_property name="ElementShortName">ALU[4:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU[4:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/EN2" type="logic">
+            <obj_property name="ElementShortName">EN2</obj_property>
+            <obj_property name="ObjectShortName">EN2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/ZSel" type="logic">
+            <obj_property name="ElementShortName">ZSel</obj_property>
+            <obj_property name="ObjectShortName">ZSel</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/RM" type="logic">
+            <obj_property name="ElementShortName">RM</obj_property>
+            <obj_property name="ObjectShortName">RM</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/WM" type="logic">
+            <obj_property name="ElementShortName">WM</obj_property>
+            <obj_property name="ObjectShortName">WM</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/EN3" type="logic">
+            <obj_property name="ElementShortName">EN3</obj_property>
+            <obj_property name="ObjectShortName">EN3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/BraE" type="logic">
+            <obj_property name="ElementShortName">BraE</obj_property>
+            <obj_property name="ObjectShortName">BraE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/JmpE" type="logic">
+            <obj_property name="ElementShortName">JmpE</obj_property>
+            <obj_property name="ObjectShortName">JmpE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/S3" type="logic">
+            <obj_property name="ElementShortName">S3</obj_property>
+            <obj_property name="ObjectShortName">S3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/WF1" type="logic">
+            <obj_property name="ElementShortName">WF1</obj_property>
+            <obj_property name="ObjectShortName">WF1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/control_unit_instance/EN0" type="logic">
+            <obj_property name="ElementShortName">EN0</obj_property>
+            <obj_property name="ObjectShortName">EN0</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/cw_s" type="array">
+         <obj_property name="ElementShortName">cw_s[21:0]</obj_property>
+         <obj_property name="ObjectShortName">cw_s[21:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/control_unit_instance/microcode" type="array">
+         <obj_property name="ElementShortName">microcode[0:479][21:0]</obj_property>
+         <obj_property name="ObjectShortName">microcode[0:479][21:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group138" type="group">
+      <obj_property name="label">PROGRAM MEMORY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider118">
+         <obj_property name="label">instr. memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/P_ADD_RD" type="array">
+         <obj_property name="ElementShortName">P_ADD_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">P_ADD_RD[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/P_MEM_OUT" type="array">
+         <obj_property name="ElementShortName">P_MEM_OUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">P_MEM_OUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut_prog_mem/PROGRAM_MEMORY_CELLS" type="array">
+         <obj_property name="ElementShortName">PROGRAM_MEMORY_CELLS[0:69][31:0]</obj_property>
+         <obj_property name="ObjectShortName">PROGRAM_MEMORY_CELLS[0:69][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group255" type="group">
+      <obj_property name="label">REGISTERFILE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider204">
+         <obj_property name="label">registers</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_RD1" type="logic">
+         <obj_property name="ElementShortName">R_RD1</obj_property>
+         <obj_property name="ObjectShortName">R_RD1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_RD2" type="logic">
+         <obj_property name="ElementShortName">R_RD2</obj_property>
+         <obj_property name="ObjectShortName">R_RD2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_WR" type="logic">
+         <obj_property name="ElementShortName">R_WR</obj_property>
+         <obj_property name="ObjectShortName">R_WR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_DATAIN" type="array">
+         <obj_property name="ElementShortName">R_DATAIN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_DATAIN[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_OUT1" type="array">
+         <obj_property name="ElementShortName">R_OUT1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_OUT1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_OUT2" type="array">
+         <obj_property name="ElementShortName">R_OUT2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_OUT2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_ADD_WR" type="array">
+         <obj_property name="ElementShortName">R_ADD_WR[4:0]</obj_property>
+         <obj_property name="ObjectShortName">R_ADD_WR[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_ADD_RD1" type="array">
+         <obj_property name="ElementShortName">R_ADD_RD1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">R_ADD_RD1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/R_ADD_RD2" type="array">
+         <obj_property name="ElementShortName">R_ADD_RD2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">R_ADD_RD2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut_registerfile/REGISTERS" type="array">
+         <obj_property name="ElementShortName">REGISTERS[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">REGISTERS[0:31][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1688" type="group">
+      <obj_property name="label">DATA MEMORY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider1847">
+         <obj_property name="label">dat. memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_MEM_DATAIN" type="array">
+         <obj_property name="ElementShortName">D_MEM_DATAIN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">D_MEM_DATAIN[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_MEM_OUT" type="array">
+         <obj_property name="ElementShortName">D_MEM_OUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">D_MEM_OUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_EN" type="logic">
+         <obj_property name="ElementShortName">D_EN</obj_property>
+         <obj_property name="ObjectShortName">D_EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_RD" type="logic">
+         <obj_property name="ElementShortName">D_RD</obj_property>
+         <obj_property name="ObjectShortName">D_RD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_WR" type="logic">
+         <obj_property name="ElementShortName">D_WR</obj_property>
+         <obj_property name="ObjectShortName">D_WR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_ADD_WR" type="array">
+         <obj_property name="ElementShortName">D_ADD_WR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">D_ADD_WR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/D_ADD_RD" type="array">
+         <obj_property name="ElementShortName">D_ADD_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">D_ADD_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut_data_mem/DATA_MEMORY_CELLS" type="array">
+         <obj_property name="ElementShortName">DATA_MEMORY_CELLS[0:69][31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_MEMORY_CELLS[0:69][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group194" type="group">
+      <obj_property name="label">DATAPATH</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider134">
+         <obj_property name="label">DATAPATH</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="group817" type="group">
+         <obj_property name="label">IF_STAGE</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/EN0" type="logic">
+            <obj_property name="ElementShortName">EN0</obj_property>
+            <obj_property name="ObjectShortName">EN0</obj_property>
+         </wvobject>
+         <wvobject fp_name="group233" type="group">
+            <obj_property name="label">PC_register_signals</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/DLXtb/dut/buffA" type="array">
+               <obj_property name="ElementShortName">buffA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffA[31:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/DLXtb/dut/buffB" type="array">
+               <obj_property name="ElementShortName">buffB[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffB[31:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/HDU_to_PCen" type="logic">
+            <obj_property name="ElementShortName">HDU_to_PCen</obj_property>
+            <obj_property name="ObjectShortName">HDU_to_PCen</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/PC_to_IM_and_add" type="array">
+            <obj_property name="ElementShortName">PC_to_IM_and_add[31:0]</obj_property>
+            <obj_property name="ObjectShortName">PC_to_IM_and_add[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/mux_to_NPC_and_PC" type="array">
+            <obj_property name="ElementShortName">mux_to_NPC_and_PC[31:0]</obj_property>
+            <obj_property name="ObjectShortName">mux_to_NPC_and_PC[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/add_to_mux" type="array">
+            <obj_property name="ElementShortName">add_to_mux[31:0]</obj_property>
+            <obj_property name="ObjectShortName">add_to_mux[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/instruction_bus" type="array">
+            <obj_property name="ElementShortName">instruction_bus[31:0]</obj_property>
+            <obj_property name="ObjectShortName">instruction_bus[31:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group203" type="group">
+         <obj_property name="label">ID_STAGE</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/EN1" type="logic">
+            <obj_property name="ElementShortName">EN1</obj_property>
+            <obj_property name="ObjectShortName">EN1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/IR_bus" type="array">
+            <obj_property name="ElementShortName">IR_bus[25:0]</obj_property>
+            <obj_property name="ObjectShortName">IR_bus[25:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/RF1" type="logic">
+            <obj_property name="ElementShortName">RF1</obj_property>
+            <obj_property name="ObjectShortName">RF1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/RF2" type="logic">
+            <obj_property name="ElementShortName">RF2</obj_property>
+            <obj_property name="ObjectShortName">RF2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/SEsel" type="logic">
+            <obj_property name="ElementShortName">SEsel</obj_property>
+            <obj_property name="ObjectShortName">SEsel</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/SE_to_SEREG" type="array">
+            <obj_property name="ElementShortName">SE_to_SEREG[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SE_to_SEREG[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group220" type="group">
+         <obj_property name="label">EX_STAGE</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/EN2" type="logic">
+            <obj_property name="ElementShortName">EN2</obj_property>
+            <obj_property name="ObjectShortName">EN2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/ZSel" type="logic">
+            <obj_property name="ElementShortName">ZSel</obj_property>
+            <obj_property name="ObjectShortName">ZSel</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/is_zero_to_BC_reg" type="logic">
+            <obj_property name="ElementShortName">is_zero_to_BC_reg</obj_property>
+            <obj_property name="ObjectShortName">is_zero_to_BC_reg</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/NPC1_to_mux_A" type="array">
+            <obj_property name="ElementShortName">NPC1_to_mux_A[31:0]</obj_property>
+            <obj_property name="ObjectShortName">NPC1_to_mux_A[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/S1" type="logic">
+            <obj_property name="ElementShortName">S1</obj_property>
+            <obj_property name="ObjectShortName">S1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/A_to_A_mux_and_is_zero" type="array">
+            <obj_property name="ElementShortName">A_to_A_mux_and_is_zero[31:0]</obj_property>
+            <obj_property name="ObjectShortName">A_to_A_mux_and_is_zero[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/A_mux_to_ALU" type="array">
+            <obj_property name="ElementShortName">A_mux_to_ALU[31:0]</obj_property>
+            <obj_property name="ObjectShortName">A_mux_to_ALU[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/S2" type="logic">
+            <obj_property name="ElementShortName">S2</obj_property>
+            <obj_property name="ObjectShortName">S2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/B_to_B_mux_and_B1" type="array">
+            <obj_property name="ElementShortName">B_to_B_mux_and_B1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">B_to_B_mux_and_B1[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/B_mux_to_ALU" type="array">
+            <obj_property name="ElementShortName">B_mux_to_ALU[31:0]</obj_property>
+            <obj_property name="ObjectShortName">B_mux_to_ALU[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/CU_to_ALU" type="array">
+            <obj_property name="ElementShortName">CU_to_ALU[4:0]</obj_property>
+            <obj_property name="ObjectShortName">CU_to_ALU[4:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/ALU_to_ALUOut_reg" type="array">
+            <obj_property name="ElementShortName">ALU_to_ALUOut_reg[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU_to_ALUOut_reg[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/SEREG_to_B_mux" type="array">
+            <obj_property name="ElementShortName">SEREG_to_B_mux[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SEREG_to_B_mux[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/IR1_to_IR2" type="array">
+            <obj_property name="ElementShortName">IR1_to_IR2[9:0]</obj_property>
+            <obj_property name="ObjectShortName">IR1_to_IR2[9:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group221" type="group">
+         <obj_property name="label">MEM_STAGE</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/EN3" type="logic">
+            <obj_property name="ElementShortName">EN3</obj_property>
+            <obj_property name="ObjectShortName">EN3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/BC_to_brnc_logic" type="logic">
+            <obj_property name="ElementShortName">BC_to_brnc_logic</obj_property>
+            <obj_property name="ObjectShortName">BC_to_brnc_logic</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/BraE" type="logic">
+            <obj_property name="ElementShortName">BraE</obj_property>
+            <obj_property name="ObjectShortName">BraE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/JmpE" type="logic">
+            <obj_property name="ElementShortName">JmpE</obj_property>
+            <obj_property name="ObjectShortName">JmpE</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/jump_logic_to_add_mux" type="logic">
+            <obj_property name="ElementShortName">jump_logic_to_add_mux</obj_property>
+            <obj_property name="ObjectShortName">jump_logic_to_add_mux</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/ALUOut_reg_to_DM_addr_and_mux_add" type="array">
+            <obj_property name="ElementShortName">ALUOut_reg_to_DM_addr_and_mux_add[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALUOut_reg_to_DM_addr_and_mux_add[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/B1_to_DM_dat" type="array">
+            <obj_property name="ElementShortName">B1_to_DM_dat[31:0]</obj_property>
+            <obj_property name="ObjectShortName">B1_to_DM_dat[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/WM" type="logic">
+            <obj_property name="ElementShortName">WM</obj_property>
+            <obj_property name="ObjectShortName">WM</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/RM" type="logic">
+            <obj_property name="ElementShortName">RM</obj_property>
+            <obj_property name="ObjectShortName">RM</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/DM_to_MD_reg" type="array">
+            <obj_property name="ElementShortName">DM_to_MD_reg[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DM_to_MD_reg[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/IR2_to_IR3" type="array">
+            <obj_property name="ElementShortName">IR2_to_IR3[9:0]</obj_property>
+            <obj_property name="ObjectShortName">IR2_to_IR3[9:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group222" type="group">
+         <obj_property name="label">WB_STAGE</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/DLXtb/dut/MD_to_WB_mux" type="array">
+            <obj_property name="ElementShortName">MD_to_WB_mux[31:0]</obj_property>
+            <obj_property name="ObjectShortName">MD_to_WB_mux[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/ALUOut1_to_WB_mux" type="array">
+            <obj_property name="ElementShortName">ALUOut1_to_WB_mux[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALUOut1_to_WB_mux[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/S3" type="logic">
+            <obj_property name="ElementShortName">S3</obj_property>
+            <obj_property name="ObjectShortName">S3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/WF1" type="logic">
+            <obj_property name="ElementShortName">WF1</obj_property>
+            <obj_property name="ObjectShortName">WF1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/RegDst" type="logic">
+            <obj_property name="ElementShortName">RegDst</obj_property>
+            <obj_property name="ObjectShortName">RegDst</obj_property>
+         </wvobject>
+         <wvobject fp_name="/DLXtb/dut/IR3_to_RF_mux" type="array">
+            <obj_property name="ElementShortName">IR3_to_RF_mux[9:0]</obj_property>
+            <obj_property name="ObjectShortName">IR3_to_RF_mux[9:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1676" type="group">
+      <obj_property name="label">all memoryes grouped</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/DLXtb/dut_prog_mem/PROGRAM_MEMORY_CELLS" type="array">
+         <obj_property name="ElementShortName">PROGRAM_MEMORY_CELLS[0:69][31:0]</obj_property>
+         <obj_property name="ObjectShortName">PROGRAM_MEMORY_CELLS[0:69][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut_registerfile/REGISTERS" type="array">
+         <obj_property name="ElementShortName">REGISTERS[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">REGISTERS[0:31][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/DLXtb/dut_data_mem/DATA_MEMORY_CELLS" type="array">
+         <obj_property name="ElementShortName">DATA_MEMORY_CELLS[0:69][31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_MEMORY_CELLS[0:69][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

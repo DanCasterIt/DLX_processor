@@ -1,0 +1,8 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a6d9821c25cd4ae38c3732bb89329f09 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DLXtb_behav xil_defaultlib.DLXtb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-923] index value <-1> is out of range [0:69] of array <program_memory_cells> [C:/Users/daniele/vivadoVHDL/DLX_v2/DLX_v2.srcs/sim_1/program_memory/program_memory.vhd:48]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

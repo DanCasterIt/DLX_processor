@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/CLA.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/G.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/N.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/PG.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/PPA.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/csb.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/fa.vhd" \
+"../../../../DLX_v2.srcs/sources_1/alu/adder/rca_generalized.vhd" \
+"../../../../DLX_v2.srcs/sim_1/adder_tb.vhd" \
+
+# Do not sort compile order
+nosort
